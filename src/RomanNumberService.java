@@ -27,6 +27,9 @@ public class RomanNumberService {
             return romanNumbers.get(closestUpperRomanNumber) +
                     toRoman(arabicNumber - closestUpperRomanNumber);
         }
+        else if(arabicNumber == 0){
+            return "0";
+        }
         else{
             throw new Exception(arabicNumber + " is not a valid number to be converted to roman");
         }
